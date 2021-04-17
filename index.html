@@ -110,7 +110,7 @@
 						</div>
 						<div class="8u">
 							<header>
-								<h1>Hi. I'm <strong>Pooja Thakur</strong>.</h1>
+								<h1><div><span id="role"  style="font-weight: bold; color:palevioletred"></div></h1><h1>I'm <strong>Pooja Thakur</strong>.</h1>
 							</header>
 							<p>Yha par tera self introduction ayega <strong>soch lena </strong> Kya dalna hhh </a> &amp; ok agsamgbgial balgbab babgj bjjsdba bjlasb b </p>
 							<a href="#work" class="button big scrolly">Learn about what I do</a>
@@ -279,9 +279,27 @@
 				</article>
 			</div>
 <script>
+		jQuery(function ($) {
+    var roles = ['Hello', 'नमस्ते','Hola',];
+    //used to determine which is the next roles to be displayed
+    var counter = 0;
+    var $role = $('#role')
+    //repeat the passed function at the specified interval - it is in milliseconds
+    setInterval(function () {
+        //display the role and increment the counter to point to next role
+        $role.text(roles[counter++]);
+        //if it is the last role in the array point back to the first item
+        if (counter >= roles.length) {
+            counter = 0;
+        }
+    }, 800)
+})
+	</script>
+<script>
             $(window).on("load", function() {
                 $(".loader-wrapper").fadeOut("slow");
             });
         </script>
+
 	</body>
 </html>
