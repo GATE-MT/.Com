@@ -681,7 +681,7 @@ img {
  LATEST COURSES SECTION
 ====================*/
 #mu-latest-courses {
-  background-color: #333;
+  background-image: url("../img/counter-bg.jpg");
   display: inline;
   float: left;
   padding: 100px 0;
