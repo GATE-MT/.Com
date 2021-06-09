@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Gate-MT | Books</title>
+    <title>Gate-MT | Study-Material</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -36,11 +36,88 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+<style>
+  /* loader add cube*/
+.loader-wrapper {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #242f3f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999999;
+        }
+        
+        .loader {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            border: 4px solid #Fff;
+            animation: loader 2s infinite ease;
+        }
+        
+        .loader-inner {
+            vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            background-color: #fff;
+            animation: loader-inner 2s infinite ease-in;
+        }
+        
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(180deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            75% {
+                transform: rotate(360deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes loader-inner {
+            0% {
+            
+                height: 0%;
+            }
+            25% {
+                height: 0%;
+            }
+            50% {
+                height: 100%;
+            }
+            75% {
+                height: 100%;
+            }
+            100% {
+                height: 0%;
+            }
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        /*loader end*/
+        
+      
+</style>
 
   </head>
   <body>
-  
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
   <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>      
@@ -139,20 +216,22 @@
  
  <!-- End breadcrumb -->
 
-  <P style="text-align: center; color: white; background-color: cadetblue; padding: 10px; font-size: 30px; margin-bottom: 25px;"><strong>GATE-Study-Material Folders</strong> </P> <span style="margin-left: 10px;">
+  <P style="text-align: center; color: white; background-color: cadetblue; padding: 10px; font-size: 30px; margin-bottom: 25px;"><strong>GATE-Study-Material Folders</strong> </P> 
+    <span style="display: block; text-align: center;">
+      <span>
  <iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21182&authkey=AMnWdfvF3_7Bp9k" width="165" height="128" frameborder="0" scrolling="no"></iframe></span>
- <span style="margin-left: 10px;"><iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21183&authkey=AJyAYdAMSttjlzA" width="165" height="128" frameborder="0" scrolling="no" ></iframe>
+ <span><iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21183&authkey=AJyAYdAMSttjlzA" width="165" height="128" frameborder="0" scrolling="no" ></iframe>
 </span>
-<span style="margin-left: 10px;"><iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21184&authkey=ADnfGTVjSJrgDns" width="165" height="128" frameborder="0" scrolling="no"></iframe></span>
-<span style="margin-left: 10px;">
+<span><iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21184&authkey=ADnfGTVjSJrgDns" width="165" height="128" frameborder="0" scrolling="no"></iframe></span>
+<span>
  <iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21185&authkey=AAGXa-M8gJDTtdw" width="165" height="128" frameborder="0" scrolling="no"></iframe></span>
- <span style="margin-left: 10px;">
+ <span>
  <iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21186&authkey=AFw-a7VXgqUhEoI" width="165" height="128" frameborder="0" scrolling="no"></iframe></span>
- <span style="margin-left: 10px;">
+ <span>
  <iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21187&authkey=AIUuin3LrxCqL-s" width="165" height="128" frameborder="0" scrolling="no"></iframe></span>
- <span style="margin-left: 10px;">
+ <span>
  <iframe src="https://onedrive.live.com/embed?cid=F2CAE0F1CBEDABA6&resid=F2CAE0F1CBEDABA6%21188&authkey=ABzwsg-HJGVA2-Y" width="165" height="128" frameborder="0" scrolling="no"></iframe>
-<!-- Start contact  --></span>
+<!-- Start contact  --></span></span>
 
   <!-- Start footer -->
   <footer id="mu-footer" style="margin-top: 190px;">
@@ -198,24 +277,9 @@
   <!-- Custom js -->
   <script src="custom.js"></script>
   <script>
-    function myFunction() {
-        var input, filter, ul, li, a, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-            a = li[i].getElementsByTagName("a")[0];
-            txtValue = a.textContent || a.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                li[i].style.display = "";
-            } else {
-                li[i].style.display = "none";
-            }
-        }
-    }
-    </script>
-    
-
+    $(window).on("load", function() {
+        $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
   </body>
 </html>
