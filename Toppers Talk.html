@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Gate-MT | Toppers Talk</title>
+    <title>Gate-MT | Upload Notes Here</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -134,6 +134,7 @@ max-width: 720px;
 min-height: 300px;
 vertical-align: middle;
 width: 89%;
+margin-left: 20px;
 position: relative;
 border-radius: 8px;
 padding: 15px 5%;
@@ -146,9 +147,10 @@ cursor: pointer;
 display: inline-block;
 font-family: arial;
 font-weight: bold;
-position: absolute;
-top: 0px;
-right: -10px;
+position: sticky;
+float: right;
+top: 3px;
+right: 10px;
 font-size: 25px;
 line-height: 30px;
 width: 30px;
@@ -220,7 +222,6 @@ border-top-right-radius: 30px;
           <!-- TEXT BASED LOGO -->
           <a class="navbar-brand" href="index.html"><span><img src="assets/img/logo.png" alt="logo"></span></a>
           <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
@@ -295,14 +296,14 @@ border-top-right-radius: 30px;
 
  <!-- Start contact  -->
  <p class="down">
-<a class="trigger_popup_fricc" target="_blank"> <button class="btn"><i class="fa fa-user"></i><strong> AIR-1 [2021] B.VINITH</strong></button></a>
+<a class="trigger_popup_fricc" target="_blank" id="tpf0"> <button class="btn"><i class="fa fa-user"></i><strong> AIR-1 [2021] B.VINITH</strong></button></a>
 
-<a class="trigger_popup_fricc1" target="_blank"> <button class="btn" style="background-color: tomato;"><i class="fa fa-user"></i><strong> AIR-82 [2021] Nikhil Kumar NITH </strong></button></a>
-<br>
-<a class="trigger_popup_fricc2" target="_blank"> <button class="btn"><i class="fa fa-user"></i><strong> AIR-1 [2018] Saurav Kumar Singh </strong></button></a>
-<a class="trigger_popup_fricc" target="_blank"> <button class="btn"><i class="fa fa-user"></i><strong> AIR-1 [2019] Coming Soon</strong></button></a>
-<a class="trigger_popup_fricc" target="_blank"> <button class="btn"><i class="fa fa-user"></i><strong> AIR-1 [2020] Coming Soon</strong></button></a>
-<a class="trigger_popup_fricc" target="_blank"> <button class="btn"><i class="fa fa-user"></i><strong> AIR-1 [20217] Coming Soon</strong></button></a>
+<a class="trigger_popup_fricc" target="_blank" id="tpf1"> <button class="btn" style="background-color: tomato;"><i class="fa fa-user"></i><strong> AIR-@ [2021] Nikhil Kumar NITH </strong></button></a>
+<a class="trigger_popup_fricc" target="_blank" id="tpf4"> <button class="btn" style="background-color:violet"><i class="fa fa-user"></i><strong> AIR-1 [2020] Jaya Gupta</strong></button></a>
+<a class="trigger_popup_fricc" target="_blank"  id="tpf2"> <button class="btn" style="background-color:steelblue;"><i class="fa fa-user"></i><strong> AIR-1 [2018] Saurav Kumar Singh </strong></button></a>
+<a class="trigger_popup_fricc" target="_blank" id="tpf3"> <button class="btn" style="background-color:seagreen;"><i class="fa fa-user"></i><strong> AIR-9 [2021] Gaurav Verma</strong></button></a>
+
+<a class="trigger_popup_fricc" target="_blank" id="tpf5" > <button class="btn" style="background-color:purple;"><i class="fa fa-user"></i><strong> AIR-7 [2020] Vipul Bohara</strong></button></a>
 </p>
 
  <div class="hover_bkgr_fricc" id="t0">
@@ -311,74 +312,90 @@ border-top-right-radius: 30px;
       <div class="popupCloseButton">&times;</div>
       <p><strong><i class="fa fa-user"></i> Name: B.Vinith </strong></p><p style="font-family: cursive;">Rank: AIR-1 2021</p>
     
-     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Books For GATE MT</Strong> </p>
+     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Material For GATE MT</Strong> </p>
   
-     <p style="color: orangered; font-family: cursive;"><strong> 1: Physical metallurgy- Vijendra singh, DA porter, Phase transformation by Raghvan</strong></p>
-     <p style="color: blue; font-family: cursive;"> <strong>2: Material science- V Raghvan, Calister</strong></p>
-     <p style="color: green;font-family: cursive;"><strong>3: Mechanical metallurgy- Dieter</strong></p>
-     <p style="color: red;font-family: cursive;"><strong>4: Thermodynamics- Gaskell, Ahindra ghosh, BS upadhyay</strong></p>
-     <p style="color: rgb(148, 9, 79);font-family: cursive;"><strong>5: Extractive metallurgy- iron and steel making by Ahindra Ghosh, HS Ray,</strong></p>
-     <p style="color: rgb(10, 98, 180);font-family: cursive;"><strong>6: Mass balance from NPTEL Assignments</strong></p>
-     <p style="color: rgb(86, 104, 9);font-family: cursive;"><strong>7: Transport phenomena from AK Rajput, NPTEL lectures</strong></p>
-     <p style="color: black;font-family: cursive;"><strong>8: Corrosion- MM Fontana</strong></p>
-     <p style="color:rgb(189, 171, 13): cursive;"><strong>9: Manufacturing- Casting from OP Gupta, NPTEL, Welding from NPTEL, NDT from NPTEL, remaining part from Dieter.</strong></p>
-     <p style="color:royalblue;font-family: cursive;"><strong>10: Mathematics- from BS Grewal</strong></p>
+     <p style="color: orangered;"><strong> 1: Physical metallurgy- Vijendra singh, DA porter, Phase transformation by Raghvan</strong></p>
+     <p style="color: blue;"> <strong>2: Material science- V Raghvan, Calister</strong></p>
+     <p style="color: green;"><strong>3: Mechanical metallurgy- Dieter</strong></p>
+     <p style="color: red;"><strong>4: Thermodynamics- Gaskell, Ahindra ghosh, BS upadhyay</strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>5: Extractive metallurgy- iron and steel making by Ahindra Ghosh, HS Ray,</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>6: Mass balance from NPTEL Assignments</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>7: Transport phenomena from AK Rajput, NPTEL lectures</strong></p>
+     <p style="color: black;"><strong>8: Corrosion- MM Fontana</strong></p>
+     <p style="color:rgb(189, 171, 13);"><strong>9: Manufacturing- Casting from OP Gupta, NPTEL, Welding from NPTEL, NDT from NPTEL, remaining part from Dieter.</strong></p>
+     <p style="color:royalblue;"><strong>10: Mathematics- from BS Grewal</strong></p>
      <br>
      <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> important topic that should be specially focused</Strong> </p>
-     <p style="color:darkslateblue;font-family: cursive;"><strong>Thermodynamics and physical metallurgy is a must if you understand that then you have covered around 60% of the syllabus</strong></p>
+     <p style="color:darkslateblue;"><strong>Thermodynamics and physical metallurgy is a must if you understand that then you have covered around 60% of the syllabus</strong></p>
      <br>
      <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Kartik</a></p>
   </div>
 </div>
 
-
+<!------------------------Rank: AIR- 2021 Nikhil sir Nith   start-->
 <div class="hover_bkgr_fricc" id="t1">
   <span class="helper"></span>
   <div>
-      <div class="popupCloseButton" id="p1">&times;</div>
-      <p><strong><i class="fa fa-user"></i> Name: Nikhil Kumar[NITH] </strong></p><p style="font-family: cursive;">Rank: AIR- 2021</p>
-    
-     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Books For GATE MT</Strong> </p>
+      <div class="popupCloseButton">&times;</div>
+      <p><strong><i class="fa fa-user"></i> Name: Nikhil Kumar[NITH] </strong></p><p style="font-family: cursive;">Rank: AIR-@ 2021</p>
+      
+     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Books/Resources For GATE MT</Strong> </p>
   
-     <p style="color: orangered; font-family: cursive;"><strong> 1: Physical metallurgy- Vijendra singh, DA porter, Phase transformation by Raghvan</strong></p>
-     <p style="color: blue; font-family: cursive;"> <strong>2: Material science- V Raghvan, Calister</strong></p>
-     <p style="color: green;font-family: cursive;"><strong>3: Mechanical metallurgy- Dieter</strong></p>
-     <p style="color: red;font-family: cursive;"><strong>4: Thermodynamics- Gaskell, Ahindra ghosh, BS upadhyay</strong></p>
-     <p style="color: rgb(148, 9, 79);font-family: cursive;"><strong>5: Extractive metallurgy- iron and steel making by Ahindra Ghosh, HS Ray,</strong></p>
-     <p style="color: rgb(10, 98, 180);font-family: cursive;"><strong>6: Mass balance from NPTEL Assignments</strong></p>
-     
-     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> important topic that should be specially focused</Strong> </p>
-     <p style="color:darkslateblue;font-family: cursive;"><strong>Thermodynamics and physical metallurgy is a must if you understand that then you have covered around 60% of the syllabus</strong></p>
+     <p style="color: orangered;"><strong> 1: Introduction To Material Science -By Prof. Rajendra Prasad [IIT-Delhi] <a href="https://youtube.com/playlist?list=PLyAZSyX8Qy5Am_2StOOQ5vCUE3VIcAenE" target="_blank"><strong> Link (Click-me)</strong></a></strong></p>
+     <p style="color: blue;"> <strong>2: Advanced Thermodynamics -By Prof. B.S. Murty [IIT-Madras]  <a href="https://youtube.com/playlist?list=PLbMVogVj5nJS_jlBSbduzYmy6YX_K4KyM" target="_blank"><strong> Link (Click-me)</strong></a></strong></p>
+     <p style="color: green;"><strong>3: Physical Metallurgy- Callister and V Raghavan</strong></p>
+     <p style="color: red;"><strong>4: Metallurgical Thermodynamics & Kinetics Numericals -BY by Dutta S.K. (Author), Lele A.B. (Author) :- <a href="https://youtube.com/playlist?list=PLbMVogVj5nJS_jlBSbduzYmy6YX_K4KyM" target="_blank" style="color: black;"><strong><i class="fa fa-amazon"></i> Amazon Link (Click-me) </strong></a><a href="#" target="_blank" style="color: rgb(148, 9, 79);"><strike>Pdf Link [Coming Soon] (Click-me)</strike></a></strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>5: Corrosion + Polarization -By Prof. Kallol Mondol [IIT-Kanpur]  <a href="https://youtube.com/playlist?list=PLFW6lRTa1g81kobA2tvZ84YHB2li6qwx7" target="_blank"><strong> Link (Click-me)</strong></a></strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>6: Physical Metallurgy- Vijendra Singh</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>7: Heat-Treatment:- VS.Raghvan</strong></p>
+     <p style="color: black;"><strong>8: xray, Sem, Tem, Optical, xrd class notes :reffer book BD cullity for XRD</strong></p>
+     <p style="color: blue;"> <strong>9: Mechanical Metallurgy- Dieter</strong></p>
+     <p style="color:rgb(189, 171, 13);"><strong>10: Engineering mathematics: made easy Booklet </strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>11: Casting & Manufacturing : NP Rao</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>12: Non-Ferrous Extractive Metallurgy: HS. Ray</strong></p>
      <br>
+     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Suggestion & Some Extra Hints:</Strong> </p>
+      <p style="color:red;"><strong>TTT & CCT Diagrams are important</strong></p>
+      <p style="color: rgb(10, 98, 180);"><strong>Always make Short Notes and in Death Months Use Micro Notes...</strong></p>
+      <p style="color: rgb(86, 104, 9);"><strong>Physical Metallurgy Mechanical Metallurgy and Thermodynamics are most important</strong></p>
+      <p style="color: rgb(10, 98, 180);"><strong>Mechanical Metallurgy is Scoring Subject </strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>Extractive Metallurgy (Tip: Ratta Maar)</strong></p>
+     <p style="color: black;"><strong>Math is Always in Parallel to other Subjects</strong></p>
+     <p style="color: blue;"> <strong>And the Most important thing Previous Year Papers</strong></p>
+     <p style="color:rgb(85, 78, 14);"><strong> Last Tip: learn how to Use Gate Calculator if you have laptop and Mouse Than use it for all Calculations Avoid Using Calculator on Mobile Phone.</strong></p>
+      <br>
      <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Kartik</a></p>
   </div>
 </div>
+<!------------------------Rank: AIR- 2021 Nikhil sir Nith   End-->
+
+<!------------------------Rank: AIR- 2018  start-->
 <div class="hover_bkgr_fricc" id="t2">
   <span class="helper"></span>
   <div>
-      <div class="popupCloseButton" id="p1">&times;</div>
-      <p><strong><i class="fa fa-user"></i> Name: Mr. Saurav Kumar Singh  </strong></p><p style="font-family: cursive;">Rank: AIR- 2018</p>
+      <div class="popupCloseButton">&times;</div>
+      <p><strong><i class="fa fa-user"></i> Name: Mr. Saurav Kumar Singh  </strong></p><p style="font-family: cursive;">Rank: AIR-1 2018</p>
     
      <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Books For GATE MT</Strong> </p>
   
-     <p style="color: orangered; font-family: cursive;"><strong>1: Physical Metallurgy- Callister and V Raghavan</strong></p>
-     <p style="color: blue; font-family: cursive;"> <strong>2: Mechanical Metallurgy- Dieter</strong></p>
-     <p style="color: green;font-family: cursive;"><strong>3: Thermodynamics- Gaskell</strong></p>
-     <p style="color: red;font-family: cursive;"><strong>4: Casting & Welding- Made Easy Booklet</strong></p>
-     <p style="color: rgb(148, 9, 79);font-family: cursive;"><strong>5: Heat Transfer- Made Easy Booklet</strong></p>
-     <p style="color: rgb(10, 98, 180);font-family: cursive;"><strong>6: Non-Ferrous Extractive Metallurgy- HS Ray</strong></p>
-     <p style="color: rgb(86, 104, 9);font-family: cursive;"><strong>7: Iron Making: RH Tupakry</strong></p>
-     <p style="color: black;font-family: cursive;"><strong>8: Rolling, Forging and etc- Dieter</strong></p>
-     <p style="color:rgb(189, 171, 13): cursive;"><strong>9: Maths- Made Easy Booklet</strong></p>
-     <p style="color:royalblue;font-family: cursive;"><strong>10: Steel Making- Nptel <a href="https://nptel.ac.in/courses/113/104/113104059/" target="_blank"><strong>Link (Click-me)</strong></a></strong></p>
-     <p style="color: rgb(148, 9, 79);font-family: cursive;"><strong>11: Manufacturing: Made Easy Booklet</strong></p>
-     <p style="color: rgb(10, 98, 180);font-family: cursive;"><strong>12: Extractive Metallurgy: SK Dutta</strong></p>
-     <p style="color: rgb(86, 104, 9);font-family: cursive;"><strong>13: Aptitude- Pariksha.co<a href="https://www.pariksha.co/" target="_blank"><strong>Link (Click-me)</strong></a> and Made Easy Booklet</strong></p>
+     <p style="color: orangered;"><strong>1: Physical Metallurgy- Callister and V Raghavan</strong></p>
+     <p style="color: blue;"> <strong>2: Mechanical Metallurgy- Dieter</strong></p>
+     <p style="color: green;"><strong>3: Thermodynamics- Gaskell</strong></p>
+     <p style="color: red;"><strong>4: Casting & Welding- Made Easy Booklet</strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>5: Heat Transfer- Made Easy Booklet</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>6: Non-Ferrous Extractive Metallurgy- HS Ray</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>7: Iron Making: RH Tupakry</strong></p>
+     <p style="color: black;"><strong>8: Rolling, Forging and etc- Dieter</strong></p>
+     <p style="color:rgb(189, 171, 13);"><strong>9: Maths- Made Easy Booklet</strong></p>
+     <p style="color:royalblue;"><strong>10: Steel Making- Nptel <a href="https://nptel.ac.in/courses/113/104/113104059/" target="_blank"><strong>Link (Click-me)</strong></a></strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>11: Manufacturing: Made Easy Booklet</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>12: Extractive Metallurgy: SK Dutta</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>13: Aptitude- Pariksha.co<a href="https://www.pariksha.co/" target="_blank"><strong>Link (Click-me)</strong></a> and Made Easy Booklet</strong></p>
      <br>
      <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> For Numerical:</Strong> </p>
-     <p style="color: black;font-family: cursive;"><strong>1: Mechanical Metallurgy: Callister</strong></p>
-     <p style="color: black;font-family: cursive;"><strong>2: Physical Metallurgy: Callister</strong></p>
-     <p style="color: black;font-family: cursive;"><strong>3: Thermodynamics: Gaskell and SK Dutta</strong></p>
+     <p style="color: black;"><strong>1: Mechanical Metallurgy: Callister</strong></p>
+     <p style="color: black;"><strong>2: Physical Metallurgy: Callister</strong></p>
+     <p style="color: black;"><strong>3: Thermodynamics: Gaskell and SK Dutta</strong></p>
      <br>
      <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i>Some Extra Hints:</Strong> </p>
      <p style="color: black;font-family: cursive;"><strong>1: Previous Year Papers is the most important part of the preparation.</strong></p>
@@ -390,6 +407,113 @@ border-top-right-radius: 30px;
      <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Kartik</a></p>
   </div>
 </div>
+<!------------------------Rank: AIR- 2018  End-->
+<!--------------------AIR-9 [2021] Gaurav Verma start -->
+<div class="hover_bkgr_fricc" id="t3">
+  <span class="helper"></span>
+  <div>
+      <div class="popupCloseButton">&times;</div>
+      <p><strong><i class="fa fa-user"></i> Name: Mr. Gaurav Verma </strong></p><p style="font-family: cursive;">Rank: AIR-9- 2018</p>
+    
+     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Resources For GATE MT</Strong> </p>
+  
+     <p style="color: orangered;"><strong>1: Thermodynamics- B.S Murthy Lectures, NPTEL ,Problems in Metallurgical Thermodynamics book by Upadhyay , Gaskell</strong></p>
+     <p style="color: blue;"> <strong>2: Mechanical Metallurgy- Dieter</strong></p>
+     <p style="color: green;"><strong>3: Physical Metallurgy- Callister, Vijendra Singh, V.Raghvan</strong></p>
+     <p style="color: red;"><strong>4: Corrosion-Fontana</strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>5: Welding- Sindo ku</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>6: Manufacturing- Dieter</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>7: Transport Phenomenon- Gaskell (This book is different from the Thermodynamics one)</strong></p>
+     <p style="color: black;"><strong>8: NPTEL resources for Powder metallurgy, casting, , microscopy, corrosion</strong></p>
+     
+     <br>
+     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Suggestion & Some Extra Hints:</Strong> </p>
+     <p style="color: black;"><strong>Q1:  important topic that should be specially focused  </strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>Ans: Thermodynamics, Transport Phenomenon, Heat/Mass Trasfer, Corrosion are the trending topics in GATE-MT. Many tricky and new questions are asked recently from these topics. If you need high rank, prepare these topics very well.</strong></p>
+     <p style="color: black;"><strong>Q2: some Do’s and Dont’s .</strong></p>
+     <p style="color: orangered;"><strong>Ans: Don’t kill your time studying everything you find. Stick to the syllabus. Only prepare for topics specifically mentioned in the syllabus. And be very thorough with formulas. Have a formula book/short notes with yourself. As soon as you study a topic, refer its past year questions to get some good insights about your preparation. Complete the syllabus of Engineering Mathematics well before. Although the questions are not that difficult but please spend some time on practising maths as well to avoid any scope of silly mistake during the exam. For getting high rank practise as many mock test you can. This is the most important part of preparation</strong></p>
+     
+     <br>
+     <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Kartik</a></p>
+  </div>
+</div>
+<!--------------------------------end air 9 -->
+<!--------------------AIR-1 [2020] jaya Gupta -->
+<div class="hover_bkgr_fricc" id="t4">
+  <span class="helper"></span>
+  <div>
+      <div class="popupCloseButton">&times;</div>
+      <p><strong><i class="fa fa-user"></i> Name: Jaya Gupta </strong></p><p style="font-family: cursive;">Rank: AIR-1- 2020</p>
+      
+      <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Suggestion & Some Extra Hints:</Strong> </p>
+      <p style="color:red;"><strong>Always prepare to get 100 percent marks in the exam. Remember to be confident, never lose hope, maintain consistency and don’t worry about the result during preparation.</strong></p>
+      <p style="color: rgb(10, 98, 180);"><strong>Some aspirants tend to leave the topics which did not have much coverage in the previous year papers but I think the entire syllabus should be studied thoroughly, even the smallest topics should be given the time it deserves. Secondly Mathematics is often left by the students for the last which should be avoided. Thirdly, a good practice of the numericals is a must.</strong></p>
+      <p style="color: rgb(86, 104, 9);"><strong>Revision of short notes that I prepared during my preparation and giving and analyzing a mock test on a daily basis was what I did during the crucial last month of my preparation.</strong></p>
+      <br>
+     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Resources For GATE MT</Strong> </p>
+  
+     <p style="color: orangered;"><strong>1: Mechanical Metallurgy – George E. Dieter</strong></p>
+     <p style="color: blue;"> <strong>2: Physical Metallurgy – Vijendra Singh</strong></p>
+     <p style="color: green;"><strong>3: Material Science – William Callister</strong></p>
+     <p style="color: red;"><strong>4: Non Ferrous Extractive Metallurgy – H.S.Ray</strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>5: Iron making and Steel making – Tupkary</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>6: Practice mass balance problem – Metallurgical Thermodynamics Kinetics and Numericals by Prof. A.b.Lele</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>7: Corrosion – Mars G.Fontana</strong></p>
+     <p style="color: black;"><strong>8: Thermodynamics – David R.Gaskell, Ahindra Ghosh(only for some topics)</strong></p>
+     <p style="color:rgb(189, 171, 13);"><strong>9: Momentum transfer – R.K.Bansal (Fluid Mechanics)</strong></p>
+     <p style="color:royalblue;"><strong>10: Welding Technology – N.K.Srinivasan </strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>11: Foundry Technology – O.P.Khanna</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>12: Metal joining – George E.Dieter</strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>13: NDT – just google it and write down its principle and applications</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>14: Engineering Mathematics – Gate previous years solved</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>15: Previous year papers – By Samarjeet Kumar Singh</strong></p>
+     
+     
+     <br>
+     <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Kartik</a></p>
+  </div>
+</div>
+<!--------------------------------end air 9 -->
+<!--------------------AIR-7 [2020] vb -->
+<div class="hover_bkgr_fricc" id="t5">
+  <span class="helper"></span>
+  <div>
+      <div class="popupCloseButton">&times;</div>
+      <p><strong><i class="fa fa-user"></i> Name: Vipul Bohara </strong></p><p style="font-family: cursive;">Rank: AIR-7- 2020</p>
+      
+      <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Suggestion & Some Extra Hints:</Strong> </p>
+      <p style="color:red;"><strong>Q1: When did you start preparation for GATE 2020?</strong></p>
+      <p style="color: green;"><strong>Ans: I started my preparation 8 months before GATE 2020. But it was not before the last 6 months before GATE when I achieved a good efficiency in my study.</strong></p>
+      <p style="color: rgb(10, 98, 180);"><strong> Metallurgy students, take my word for it, do not need lots of sources to study well. Metallurgy aspirants should just have confidence in themselves and their strategy. For most of the topics, including all major topics, one should stick to standard course books and NPTEL video lectures and NPTEL study materials. This much would allow not only to crack this exam but also to secure a single digit AIR</strong></p>
+      <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Preparation strategy:</Strong> </p>
+      <p style="color: rgb(148, 9, 79);"><strong> Usually I do not make complete notes. I highlight the important lines and formulas in the original source only from where I read them (like books and PDFs). This saves my time. But I do make short notes of all important topics at the time of my first or second revision of the related topic. Making short notes at the time of revision is very efficient and helpful strategy because it lets me know the topics which I often forget. Also, when I try to make notes at the very first time of reading a topic then I usually end up adding not so important things in the notes and consequently increase the size of notes unnecessarily.
+
+        For the GATE exam specifically, I only focused on the topics which were covered in GATE papers of last 20 years. Mostly I studied from standard books and NPTEL videos. I also used my college notes and my friends’ notes (only of those friends who were serious about GATE and made their notes from reliable and standard sources).</strong></p>
+      <br>
+     <p style="margin-left: 10px; font-size: large;"><Strong><i class="fa fa-info-circle"></i> Resources For GATE MT</Strong> </p>
+  
+     <p style="color: orangered;"><strong>1: Corrosion : Mars G.Fontana – For detail study</strong></p>
+     <p style="color: blue;"> <strong>2: Thermodynamics: David R Gaskell / Ahindra Ghosh</strong></p>
+     <p style="color: green;"><strong>3: Rate Process: A.K Mohanty</strong></p>
+     <p style="color: red;"><strong>4: Mechanical Metallurgy: George E Dieter- for almost all topics</strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>5: William D. Callister- Sufficient to cover basics</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>6: Vijendra singh- for defects in crystals and elements of dislocation theory</strong></p>
+     <p style="color: rgb(86, 104, 9);"><strong>7: Physical Metallurgy: Vijendra singh- for majority of topics of Physical Metallurgy</strong></p>
+     <p style="color: black;"><strong>8: William D. Callister / V Raghavan- For material Science</strong></p>
+     <p style="color:rgb(189, 171, 13);"><strong>9: Extractive Metallurgy (Non Ferrous): H S Ray and NPTEL</strong></p>
+     <p style="color:royalblue;"><strong>10: Iron and Steel Making: R.H Tupkary / A. ghosh </strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>11: Manufacturing Process: George E Dieter- Metal Forming</strong></p>
+     <p style="color: rgb(10, 98, 180);"><strong>12: P N Rao- Metal joining and Foundry</strong></p>
+     <p style="color: rgb(148, 9, 79);"><strong>13: O.P.Khanna – Foundry Engineering</strong></p>
+
+     <p style="color: rgb(86, 104, 9);"><strong>14: Mathematics: BS Grewal</strong></p>
+     
+     
+     <br>
+     <p style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Kartik</a></p>
+  </div>
+</div>
+<!--------------------------------end air 9 -->
 
 
 
@@ -405,6 +529,7 @@ border-top-right-radius: 30px;
           <p> All Right Reserved. Designed by <a href="#" rel="nofollow">Kartik(188020)</a></p>
         </div>
       </div>
+    </div>
     </div>
     <!-- end footer bottom -->
   </footer>
@@ -438,7 +563,7 @@ border-top-right-radius: 30px;
   </script>
    <script>
     $(window).load(function () {
-  $(".trigger_popup_fricc").click(function(){
+  $("#tpf0").click(function(){
      $('#t0').show();
   });
   $('#t0').click(function(){
@@ -451,7 +576,7 @@ border-top-right-radius: 30px;
   </script>
   <script>
     $(window).load(function () {
-  $(".trigger_popup_fricc1").click(function(){
+  $("#tpf1").click(function(){
      $('#t1').show();
   });
   $('#t1').click(function(){
@@ -464,10 +589,10 @@ border-top-right-radius: 30px;
   </script>
   <script>
     $(window).load(function () {
-  $(".trigger_popup_fricc2").click(function(){
+  $("#tpf2").click(function(){
      $('#t2').show();
   });
-  $('#t1').click(function(){
+  $('#t2').click(function(){
       $('#t2').hide();
   });
   $('.popupCloseButton').click(function(){
@@ -475,6 +600,46 @@ border-top-right-radius: 30px;
   });
 });
   </script>
+  <script>
+    $(window).load(function () {
+  $("#tpf3").click(function(){
+     $('#t3').show();
+  });
+  $('#t3').click(function(){
+      $('#t3').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('#t3').hide();
+  });
+});
+  </script>
+  <script>
+    $(window).load(function () {
+  $("#tpf4").click(function(){
+     $('#t4').show();
+  });
+  $('#t4').click(function(){
+      $('#t4').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('#t4').hide();
+  });
+});
+  </script>
+
+<script>
+  $(window).load(function () {
+$("#tpf5").click(function(){
+   $('#t5').show();
+});
+$('#t5').click(function(){
+    $('#t5').hide();
+});
+$('.popupCloseButton').click(function(){
+    $('#t5').hide();
+});
+});
+</script>
   
 
   </body>
