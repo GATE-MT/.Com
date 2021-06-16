@@ -501,14 +501,14 @@ img {
   border-radius: 9px;
 }
 #mu-about-us .mu-about-us-area .mu-about-us-right a:after {
-  background-color: rgba(0, 0, 0, 0.8);
+  
   bottom: 0;
   color: #ddd;
-  content: '\f04b';
+ 
   font-family: fontAwesome;
   font-size: 50px;
   left: 0;
-  padding-top: 27%;
+
   position: absolute;
   right: 0;
   text-align: center;
